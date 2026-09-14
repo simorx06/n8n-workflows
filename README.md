@@ -32,7 +32,7 @@ Edit [`.env`](.env) and fill in every variable:
 | `N8N_PROTOCOL` | Protocol for webhook URLs | `https` |
 | `N8N_ENCRYPTION_KEY` | **Secret** – encrypts credentials | `your-32-char-random-key` |
 | `N8N_PROXY_HOPS` | Reverse-proxy hops (set to `1`) | `1` |
-| `WEBHOOK_URL` | Override webhook URL | `https://n8n.example.com/` |
+| `N8N_WEBHOOK_URL` | Override webhook URL | `https://n8n.example.com/` |
 | `EXECUTIONS_DATA_PRUNE` | Enable auto-pruning | `true` |
 | `EXECUTIONS_DATA_MAX_AGE` | Max age in hours | `168` |
 | `EXECUTIONS_DATA_PRUNE_TIMEOUT` | Prune timeout in seconds | `3600` |
@@ -112,7 +112,7 @@ Open `https://<your-domain>` in your browser. Create your admin account on first
 | `N8N_PROTOCOL` | `https` | Protocol for webhook URLs |
 | `N8N_ENCRYPTION_KEY` | — | Encryption key for credentials (required) |
 | `N8N_PROXY_HOPS` | `0` | Number of reverse-proxy hops (set to `1` when behind Caddy) |
-| `WEBHOOK_URL` | — | Override webhook URL |
+| `N8N_WEBHOOK_URL` | — | Override webhook URL |
 | `EXECUTIONS_DATA_PRUNE` | `false` | Enable automatic pruning |
 | `EXECUTIONS_DATA_MAX_AGE` | `168` | Max age in hours (7 days) |
 | `EXECUTIONS_DATA_PRUNE_TIMEOUT` | `3600` | Prune timeout in seconds |
